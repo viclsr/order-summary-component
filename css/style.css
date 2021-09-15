@@ -1,0 +1,196 @@
+/*RESET CSS*/
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+/*RESET CSS*/
+
+/*general*/
+body {
+  background-image: url("/assets/img/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 100%;
+  padding-bottom: 50px;
+  margin: 50px 0px;
+  width: 450px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 25px 30px rgba(14, 27, 86, 0.135);
+}
+/*general*/
+
+/*text*/
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 900;
+  color: rgb(35, 35, 35);
+}
+/*text*/
+
+/*button*/
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment {
+  border-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  background-color: hsl(245, 75%, 52%);
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: 700;
+  box-shadow: 0px 20px 10px rgba(62, 36, 255, 0.114);
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.payment:hover {
+  filter: brightness(1.4);
+}
+
+.cancel:hover {
+  filter: opacity(0.7);
+}
+
+.cancel {
+  margin-top: 30px;
+  color: rgb(140, 142, 142);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+/*button*/
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+
+/*content*/
+.p-info {
+  text-align: center;
+  padding: 0px 70px;
+  color: rgb(140, 142, 142);
+  margin-top: 20px;
+  line-height: 25px;
+}
+/*content*/
+
+/*music-plan*/
+.music {
+  display: flex;
+  justify-content: center;
+}
+
+.row-music {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  line-height: 25px;
+  background-color: rgba(180, 181, 197, 0.1);
+  border-radius: 15px;
+  justify-content: space-between;
+  margin: 30px 0px;
+  width: 80%;
+}
+
+.col-icon-music {
+  display: flex;
+  align-items: center;
+}
+
+.icon-music {
+  width: 100%;
+}
+
+.change-anchor {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.row-music-plan {
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.anual-plan {
+  font-weight: 900;
+}
+
+.price {
+  color: rgb(140, 142, 142);
+}
+/*music-plan*/
+
+/*footer*/
+footer {
+  padding-bottom: 20px;
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+/*footer*/
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding-bottom: 30px;
+  }
+  .payment {
+    width: 70%;
+  }
+  .attribution {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .row-music {
+    flex-direction: column;
+  }
+  .row-music-plan {
+    flex-direction: column;
+  }
+  .icon-music {
+    max-width: 70%;
+    justify-content: center;
+  }
+  .col-icon-music {
+    justify-content: center;
+  }
+}
